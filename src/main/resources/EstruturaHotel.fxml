@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" spacing="18" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelController">
+    <padding><Insets bottom="30" left="30" right="30" top="28" /></padding>
+    <Label style="-fx-font-size: 28px; -fx-font-weight: bold;" text="HOTEL Kauan" />
+    <Label style="-fx-font-size: 15px;" text="O melhor o Hotel da região" />
+    <GridPane hgap="12" maxWidth="720" vgap="12">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+        </columnConstraints>
+        <Button maxWidth="Infinity" minHeight="48" onAction="#cadastrarHospede" text="Cadastrar hóspede" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#cadastrarQuarto" text="Cadastrar quarto" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#reservarQuarto" text="Fazer reserva" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#cancelarReserva" text="Cancelar reserva" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#consultarHospedes" text="Consultar hóspedes" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#consultarQuartos" text="Consultar quartos" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#repararQuarto" text="Reparar quarto" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#danificarQuarto" text="Registrar dano" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#gerenciarListaNegra" text="Lista negra" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#gerenciarDividas" text="Gerenciar dívidas" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#fazerCheckIn" text="Check-in" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Button maxWidth="Infinity" minHeight="48" onAction="#fazerCheckOut" text="Check-out" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <Label text="Código feito por: Augusto, Luís Gustavo, Vitor e Heverton" wrapText="true" />
+</VBox>
